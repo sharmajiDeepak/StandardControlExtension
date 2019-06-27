@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.practice.StandardControlExtension.StandardControlExtension.controller.main" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:es="com.practice.StandardControlExtension.StandardControlExtension.Extend">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Label text="Are you ok?" />
+                <es:Switch state="false"
+                        customTextOn="Exactly"
+                        customTextOff="Not Exactly"
+                        editable="false"
+                    />
+                    <es:Select width="50%">
+                    	<core:Item key="ds" text="Deepak Sharma" />
+                    	<core:Item key="rs" text="Rohit Sangwa" />
+                    </es:Select>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
